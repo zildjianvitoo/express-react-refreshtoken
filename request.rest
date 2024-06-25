@@ -1,0 +1,30 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJWaXRvIiwiZW1haWwiOiJ2aXRvQGdtYWlsLmNvbSIsImlhdCI6MTcxOTMxNjQyMCwiZXhwIjoxNzE5MzE2NDQwfQ.fbpjS4UOiNlNspx_sk0FeKbWrl5HSkrw4-_mMPw-CYY
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name":"Vito",
+    "email": "vito@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+}
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "vito@gmail.com",
+    "password": "123456"
+}
+
+###
+GET  http://localhost:3000/token
+Content-Type: application/json
+
+###
+DELETE   http://localhost:3000/users/logout
+
