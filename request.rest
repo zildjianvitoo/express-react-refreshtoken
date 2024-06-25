@@ -1,8 +1,8 @@
-GET http://localhost:3000/users
+GET http://localhost:5000/users
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJWaXRvIiwiZW1haWwiOiJ2aXRvQGdtYWlsLmNvbSIsImlhdCI6MTcxOTMxNjQyMCwiZXhwIjoxNzE5MzE2NDQwfQ.fbpjS4UOiNlNspx_sk0FeKbWrl5HSkrw4-_mMPw-CYY
 
 ###
-POST http://localhost:3000/users
+POST http://localhost:5000/users
 Content-Type: application/json
 
 {
@@ -13,7 +13,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3000/users/login
+POST http://localhost:5000/users/login
 Content-Type: application/json
 
 {
@@ -22,7 +22,7 @@ Content-Type: application/json
 }
 
 ###
-GET  http://localhost:3000/token
+GET  http://localhost:5000/token
 Content-Type: application/json
 
 ###
