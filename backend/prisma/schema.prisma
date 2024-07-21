@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
@@ -15,5 +15,5 @@ model User {
   name     String
   email    String   @unique
   password String
-  refresh_token String? @db.Text @unique
+  refresh_token String?  @unique
 }

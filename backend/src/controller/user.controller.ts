@@ -47,7 +47,7 @@ export async function doRegister(req: Request, res: Response) {
 
 export async function doLogin(req: Request, res: Response) {
   const { email, password } = req.body;
-
+  console.log({ email, password });
   try {
     const user = await db.user.findUnique({
       where: {
